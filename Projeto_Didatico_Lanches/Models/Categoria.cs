@@ -13,7 +13,7 @@ public class Categoria
     public String CategoriaNome { get; set; }
     [StringLength(200, ErrorMessage = "Tamanho max 200 caracteres")]
     [Required(ErrorMessage = "Descrição obrigatoria")]
-    [Display(Name = "Nome")]
+    [Display(Name = "Descrição")]
     public String Descricao { get; set; }
     public List<Lanche> Lanches { get; set; }
 }
