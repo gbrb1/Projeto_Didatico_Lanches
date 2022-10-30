@@ -1,5 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Projeto_Didatico_Lanches.Context;
+using Projeto_Didatico_Lanches.Repositories;
+using Projeto_Didatico_Lanches.Repositories.Interfaces;
 
 namespace Projeto_Didatico_Lanches;
 
@@ -17,6 +19,8 @@ public class Startup
     {
         services.AddDbContext<AppDbContext>(options =>
         options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+        services.AddTransient<ILancheRepository, LancheRepository>();
+        services.AddTransient<ICategoriaRepository, CategoriaRepository>();
         services.AddControllersWithViews();
     }
 
