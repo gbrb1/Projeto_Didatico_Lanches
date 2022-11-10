@@ -61,11 +61,20 @@ namespace Projeto_Didatico_Lanches.Resources {
         }
         
         /// <summary>
-        ///   Consulta uma cadeia de caracteres localizada semelhante a OLA MUNDO.
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Lanche.
         /// </summary>
-        public static string TESTE_RECURSO {
+        public static string LANCHE {
             get {
-                return ResourceManager.GetString("TESTE_RECURSO", resourceCulture);
+                return ResourceManager.GetString("LANCHE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Preço.
+        /// </summary>
+        public static string PRECO {
+            get {
+                return ResourceManager.GetString("PRECO", resourceCulture);
             }
         }
         

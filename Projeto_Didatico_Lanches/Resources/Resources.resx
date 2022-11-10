@@ -117,8 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="TESTE_RECURSO" xml:space="preserve">
-    <value>OLA MUNDO</value>
+  <data name="LANCHE" xml:space="preserve">
+    <value>Lanche</value>
+  </data>
+  <data name="PRECO" xml:space="preserve">
+    <value>Preço</value>
   </data>
   <data name="TITULO_LISTA_LANCHES" xml:space="preserve">
     <value>Todos os Lanches</value>

@@ -1,8 +1,17 @@
-﻿@using Projeto_Didatico_Lanches.Resources
-@model IEnumerable<Projeto_Didatico_Lanches.Models.Lanche>
+﻿@model LancheListViewModel
+@{ViewData["Title"] = "lista de lanche";}
 
-@{
-    ViewData["Title"] = Resources.TITULO_LISTA_LANCHES;
-}
 
-<div><h2>@Resources.TESTE_RECURSO</h2></div>
+<div>
+    <h2>@Model.CategoriaAtual</h2>
+</div>
+<div class="container">
+<div class="row">
+
+@foreach(var lanche in Model.Lanches)
+    {
+            @await Html.PartialAsync("_LanchesResumo", lanche)
+    }
+
+</div>
+</div>
